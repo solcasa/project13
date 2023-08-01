@@ -1,0 +1,189 @@
+.section.on {
+    transition: 0.5s;
+}
+
+/* 임시bg - 지울예정 */
+
+.sub01 {
+    background: #f9f9f9 center center/cover;
+}
+
+.sub02 {
+    background: #666 center center/cover;
+}
+
+.footer .inner {
+    height: 500px;
+}
+
+* {
+    outline: 1px solid tomato;
+}
+
+/* =========================================================================== */
+/* 헤더 */
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    background: #fff;
+}
+
+.Header .header_wrap {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .header_wrap h1 img {
+    height: 50px;
+}
+
+.Header .header_wrap .top_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Header .header_wrap .top_nav>li {
+    position: relative;
+}
+
+.Header .header_wrap .top_nav>li:hover .sub_nav {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Header .header_wrap .top_nav>li a {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.Header .header_wrap .sub_nav {
+    position: absolute;
+    top: 60px;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px 10px;
+    background: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.Header .header_wrap .sub_nav>li {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.Header .header_wrap .sub_nav>li a {
+    display: block;
+    font-size: 14px;
+}
+
+
+
+/* 메인비주얼 슬라이드 */
+.main .main_slide .itm01 {
+    height: 100vh;
+    background: url(../images/main_bg_01.jpg) no-repeat center center/cover;
+}
+
+.main .main_slide .itm02 {
+    height: 100vh;
+    background: url(../images/main_bg_02.jpg) no-repeat center center/cover;
+}
+
+.main .main_slide .itm03 {
+    height: 100vh;
+    background: url(../images/main_bg_03.jpg) no-repeat center center/cover;
+}
+
+.main .main_slide .itm04 {
+    height: 100vh;
+    background: url(../images/main_bg_04.jpg) no-repeat top center/cover;
+}
+
+.main .main_slide .itm05 {
+    height: 100vh;
+    background: url(../images/main_bg_05.jpg) no-repeat bottom center/cover;
+}
+
+
+
+/*  제품 탭&슬라이드*/
+.sub01 .slider {
+    margin: 0 -9px;
+}
+
+.sub01 .item {
+    margin: 0 9px;
+}
+
+.sub01 .tab {
+    display: none;
+}
+
+.sub01 .tab.active {
+    display: block;
+}
+
+
+
+.sub01 .title {
+    text-align: center;
+}
+
+.sub01 .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 48px 0;
+    position: relative;
+}
+
+.sub01 .title h2::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40px);
+    width: 50px;
+    height: 2px;
+    background: #000;
+
+}
+
+.sub01 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sub01 .buttons button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-size: 15px;
+    color: #666;
+
+    margin: 0 0 40px 0;
+}
+
+
+
+
+
+
+.sub01 .sub01 .item .itm_info {
+    text-align: center;
+}
