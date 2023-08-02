@@ -2,25 +2,14 @@
     transition: 0.5s;
 }
 
-/* 임시bg - 지울예정 */
-
-.sub01 {
-    background: #f9f9f9 center center/cover;
-}
-
-.sub02 {
-    background: #666 center center/cover;
-}
-
-.footer .inner {
-    height: 500px;
-}
-
 * {
-    outline: 1px solid tomato;
+    outline: 1px solid tomato--;
 }
 
-/* =========================================================================== */
+
+
+
+
 /* 헤더 */
 .Header {
     position: fixed;
@@ -30,6 +19,7 @@
     z-index: 999;
 
     background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .Header .header_wrap {
@@ -91,34 +81,104 @@
 
 
 /* 메인비주얼 슬라이드 */
+.main {
+    position: relative;
+}
+
 .main .main_slide .itm01 {
     height: 100vh;
     background: url(../images/main_bg_01.jpg) no-repeat center center/cover;
 }
+
 
 .main .main_slide .itm02 {
     height: 100vh;
     background: url(../images/main_bg_02.jpg) no-repeat center center/cover;
 }
 
+
 .main .main_slide .itm03 {
     height: 100vh;
-    background: url(../images/main_bg_03.jpg) no-repeat center center/cover;
+    background: url(../images/main_bg_03.jpg) no-repeat bottom center/cover;
 }
 
-.main .main_slide .itm04 {
-    height: 100vh;
-    background: url(../images/main_bg_04.jpg) no-repeat top center/cover;
+.main .main_slide .slogan {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin: 0 0 0 240px;
+    text-shadow: 0 0 3px #000;
+
 }
 
-.main .main_slide .itm05 {
-    height: 100vh;
-    background: url(../images/main_bg_05.jpg) no-repeat bottom center/cover;
+.main .main_slide .slogan h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
 }
 
+.main .main_slide .slogan p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+}
 
+.main .main_slide .slogan a {
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    padding: 5px 40px;
+}
+
+.main .arrow_box {
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 56px;
+    width: 200px;
+    height: 50px;
+}
+
+.main .arrow_box .arrows i {
+    color: #fff;
+    margin: 0 auto;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.main .arrows .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main .arrows .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main .arrow_box .slide_num {
+    color: #fff;
+    text-align: center;
+    padding: 17px;
+}
+
+.main .arrow_box .slide_num span,
+.main .arrow_box .slide_num strong {
+    color: #fff;
+}
 
 /*  제품 탭&슬라이드*/
+.sub01 {
+    background: #f9f9f9 center center/cover;
+}
+
 .sub01 .slider {
     margin: 0 -9px;
 }
@@ -134,8 +194,6 @@
 .sub01 .tab.active {
     display: block;
 }
-
-
 
 .sub01 .title {
     text-align: center;
@@ -158,7 +216,6 @@
     width: 50px;
     height: 2px;
     background: #000;
-
 }
 
 .sub01 .buttons {
@@ -179,11 +236,112 @@
     margin: 0 0 40px 0;
 }
 
+.sub01 .item a {
+    display: block;
+    margin: 0 0 24px 0;
+}
 
+.sub01 .item a img {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
 
-
-
-
-.sub01 .sub01 .item .itm_info {
+.sub01 .item .itm_info {
     text-align: center;
+}
+
+.sub01 .item .itm_info strong {
+    display: block;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.sub01 .item .itm_info p {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.sub01 .item .itm_info span {
+    font-size: 15px;
+}
+
+
+
+/*  sns 슬라이드 */
+.sub02 .title {
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.sub02 .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    position: relative;
+}
+
+.sub02 .title p {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.sub02 .sns_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+
+}
+
+
+
+/* 푸터 */
+.footer {
+    background: #f9f9f9;
+}
+
+.footer .inner {
+    height: 400px;
+    font-size: 14px;
+    padding: 80px 0;
+}
+
+.footer .inner b {
+    font-weight: 600;
+}
+
+.footer .ft_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .ft_top .hours {
+    margin: 0 0 48px 0;
+}
+
+.footer .ft_top .hours li {
+    margin: 0 0 5px 0;
+}
+
+.footer .ft_top .hours .tel {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.footer .ft_top .sns {
+    display: flex;
+}
+
+.footer .ft_top .sns i {
+    font-size: 22px;
+    padding: 6px;
+}
+
+.footer .ft_bottom {
+    margin: 0 0 48px 0;
+}
+
+.footer .ft_bottom .company_info li {
+    margin: 0 0 5px 0;
 }
