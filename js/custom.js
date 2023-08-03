@@ -55,9 +55,55 @@ $(function () {
         $('.slider').slick('setPosition');
     });
 
+
+
     $('.slider').slick({
         slidesToShow: 4,
         dots: false,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
-})
+
+
+    $('.sns_container').slick({
+        slidesToShow: 3,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                }
+            }
+        ]
+    });
+});
+
+
+//반응형
+$(function () {
+
+
+    $('.mopen').on('click', function () {
+        $('.Header .top_nav').toggleClass('on');
+    });
+
+    $('.Header .top_nav>li>a').on('click', function (e) {
+        if ($('.Header .top_nav').hasClass('on')) {
+            e.preventDefault();
+            $(this).next().stop().slideToggle();
+        }
+    });
+
+
+});
+
