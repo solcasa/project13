@@ -680,6 +680,10 @@
 
 /* cowork 슬라이드(모바일) */
 @media (max-width: 768px) {
+    .sub02 {
+        background: #f9f9f9;
+    }
+
     .sub02 .title {
         text-align: center;
         position: relative;
