@@ -717,12 +717,12 @@
 
     .sub02 .left {
         position: relative;
-        padding: 20px 10px;
+        padding: 5px;
     }
 
     .sub02 .left h2 {
         position: relative;
-        margin: 0 0 13px 0;
+        margin: 0 0 0 0;
         font-size: 30px;
         font-weight: 200;
         line-height: 1.2;
@@ -734,11 +734,7 @@
     }
 
     .sub02 .left p {
-        display: block;
-        line-height: 1.4;
-        font-size: 14px;
-        word-break: break-all;
-        word-break: keep-all;
+        display: none;
     }
 
     .sub02 .left .arrows {
@@ -759,7 +755,7 @@
 
     .sub02 .right .img_box,
     .sub02 .right .txt_box {
-        padding: 10px;
+        padding: 5px;
     }
 
     .sub02 .right .txt_box span {
