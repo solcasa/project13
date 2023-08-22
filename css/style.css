@@ -731,7 +731,7 @@
 
     .sub02 .left h2 {
         position: relative;
-        margin: 0 0 0 0;
+        margin: 0 0 10px 0;
         font-size: 30px;
         font-weight: 200;
         line-height: 1.2;
@@ -821,10 +821,6 @@
 
 /* sns 그리드 (모바일) */
 @media (max-width: 768px) {
-    .sub03 {
-        padding: 50px 0;
-    }
-
     .sub03 .title {
         text-align: center;
         margin: 0 0 24px 0;
