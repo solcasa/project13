@@ -478,6 +478,10 @@
 
 /*  제품 탭&슬라이드(모바일)*/
 @media (max-width: 768px) {
+    .sub01 {
+        padding: 50px 0;
+    }
+
     .sub01 .slider {
         margin: 0 -9px;
     }
@@ -681,6 +685,7 @@
 /* cowork 슬라이드(모바일) */
 @media (max-width: 768px) {
     .sub02 {
+        padding: 50px 0;
         background: #f9f9f9;
     }
 
@@ -816,6 +821,10 @@
 
 /* sns 그리드 (모바일) */
 @media (max-width: 768px) {
+    .sub03 {
+        padding: 50px 0;
+    }
+
     .sub03 .title {
         text-align: center;
         margin: 0 0 24px 0;
